@@ -1,23 +1,28 @@
+import 'package:client/core/theme/theme.dart';
+import 'package:client/core/view/screens/splash_screen.dart';
+import 'package:client/features/auth/view/screens/log_in_screen.dart';
+import 'package:client/features/auth/view/screens/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const AuthApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class AuthApp extends StatelessWidget {
+  const AuthApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Auth',
+      theme: authTheme,
       routes: {
-        
-      }
+        SplashScreen.route: (context) => const SplashScreen(),
+        SignUpScreen.route: (context) => const SignUpScreen(),
+        LogInScreen.route: (context) => const LogInScreen(),
+      },
+      initialRoute: SignUpScreen.route,
     );
   }
 }
