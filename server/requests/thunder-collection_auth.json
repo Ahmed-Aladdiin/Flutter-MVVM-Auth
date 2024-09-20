@@ -1,0 +1,67 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "auth",
+    "collectionId": "b1f8a526-be1e-414f-9c86-f60e91aa043f",
+    "dateExported": "2024-09-19T01:12:28.006Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b01cd4a6-f422-49e9-85e8-b9ba67dda8af",
+            "colId": "b1f8a526-be1e-414f-9c86-f60e91aa043f",
+            "containerId": "",
+            "name": "Sign Up",
+            "url": "http://localhost:8080/auth/sign-up",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-19T01:10:26.554Z",
+            "modified": "2024-09-19T01:10:38.976Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"ahmed\",\n  \"email\": \"ahmed@gmail.com\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d2d633a5-b0c7-4614-a45d-388ba694d6a2",
+            "colId": "b1f8a526-be1e-414f-9c86-f60e91aa043f",
+            "containerId": "",
+            "name": "Log In",
+            "url": "http://localhost:8080/auth/log-in",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-09-19T01:11:07.081Z",
+            "modified": "2024-09-19T01:11:07.081Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ahmed@gmail.com\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d60366be-77a5-4c62-954a-88fc84852836",
+            "colId": "b1f8a526-be1e-414f-9c86-f60e91aa043f",
+            "containerId": "",
+            "name": "me",
+            "url": "http://localhost:8080/auth/me",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-09-19T01:11:17.038Z",
+            "modified": "2024-09-19T01:11:17.038Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZWI3MzNiYjRiYjkzOTg2M2VhNzhiZiIsImlhdCI6MTcyNjcwNzYwNn0.EnN1W7A7D-S3RS0EmI6lEgzoJfkOeb-_5i2oSlYlR7M"
+            }
+        }
+    ],
+    "ref": "KVMgSCkALLpD-YmjTRZe-lajvb61ne7RvUD3Et-N55OEAb3X_DRfN7iP_7TtnXXXqZVXUnrm69-Yhs8bldahRg"
+}
