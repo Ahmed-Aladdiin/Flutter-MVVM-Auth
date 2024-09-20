@@ -1,35 +1,68 @@
 # Flutter MVVM Authentication
 
-Is a complete authentication feature that can be used for any application.
+A complete authentication feature that can be integrated into any Flutter application.
 
-## Application Features:
-- Online Authentication in case of internet connection
-- Offline Authentication using previously cashed user Data
-- Persistent Login: stay logged in as long as you didn't log out
-    - Fetches and caches user data in case of internet connection to stay up to data
-    - Uses cached data if no internet connection is possible
-- Use of NoSQL local data base to store cached user data and access tokens
-- Complete and Comprehensive error handling for all possible cases
-- Use of real API calls to authenticate and fetch user data
-- Build on a clean MVVM architectural pattern
+## Features:
+- **Online Authentication**: Works when there is an internet connection.
+- **Offline Authentication**: Uses cached user data when offline.
+- **Persistent Login**: Stays logged in until the user logs out.
+    - Fetches and caches user data when online, keeping it up-to-date.
+    - Uses cached data if no internet is available.
+- **NoSQL Local Database**: Stores cached user data and access tokens.
+- **Comprehensive Error Handling**: Handles all possible error cases.
+- **Real API Integration**: Authenticates and fetches user data through real API calls.
+- Built on a **Clean MVVM Architectural Pattern**.
 
-## Used Technologies:
-- Flutter for UI
-  - Flutter Riverpod state management
-  - Hive NoSQL local database
-- Node.js and Express.js for server
-- MongoDB
-- JWT
-- Bcrypt
+## Technologies Used:
+- **Flutter** for UI
+  - **Riverpod** for state management
+  - **Hive** for local NoSQL storage
+- **Node.js** and **Express.js** for backend server
+- **MongoDB** for database
+- **JWT** for authentication
+- **Bcrypt** for password hashing
 
-## How to Run
-1. clone the repository
-2. navigate to the server directory
-3. create a '.env' file similar the provided '.template.env' file
-4. install the packages 'npm i'
-5. run the server 'npm run dev'
-6. navigate to the client director from the root directory of the project
-1. open in your preferred editor (vs code)
-1. in the 'lib/core/constant/server_constants.dart' file, add the ip address of your machine
-1. in terminal, use 'flatter pub get' command
-1. run the application 
+## How to Run the Project
+
+### Backend (Node.js Server)
+1. Clone the repository:
+    ```bash
+    git clone git@github.com:Ahmed-Aladdiin/Flutter-MVVM-Auth.git
+    ```
+2. Navigate to the server directory:
+    ```bash
+    cd server
+    ```
+3. Create a `.env` file based on the provided `.template.env` file:
+    ```bash
+    cp .template.env .env
+    ```
+4. Install the necessary Node.js packages:
+    ```bash
+    npm install
+    ```
+5. Start the server in development mode:
+    ```bash
+    npm run dev
+    ```
+
+### Flutter Client
+1. Navigate to the client directory from the root of the project:
+    ```bash
+    cd client
+    ```
+2. Open the project in your preferred editor (e.g., VS Code):
+    ```bash
+    code .
+    ```
+3. In the `lib/core/constant/server_constants.dart` file, update the IP address to match your machine's IP.
+4. In the terminal, get Flutter dependencies:
+    ```bash
+    flutter pub get
+    ```
+5. Run the Flutter application:
+    ```bash
+    flutter run
+    ```
+
+Now, you're all set to run both the backend server and the Flutter client!
